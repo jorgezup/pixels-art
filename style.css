@@ -1,27 +1,40 @@
 body {
-    width: 100%;
-    max-width: 1366px;
-    height: 1vh;
-    max-height: 768px;
+  width: 100%;
+  max-width: 1366px;
+  height: 1vh;  
+  max-height: 768px;
 }
 
 .color {
-    border: 1px solid #000000;
-    display: inline-block;
+  border: 1px solid #000000;
+  display: inline-block;
 }
 
 .black {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 .red {
-    background-color: red;
+  background-color: red;
 }
 
 .blue {
-    background-color: blue;
+  background-color: blue;
 }
 
 .green {
-    background-color: green;
+  background-color: green;
+}
+
+#pixel-board {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.pixel {
+  background-color: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border: 1px solid #000000;
 }
