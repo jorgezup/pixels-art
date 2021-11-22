@@ -44,4 +44,18 @@ window.onload = function () {
       colorsPalette[i].classList.add('selected'); // Add selected color to div selected
     });
   }
+
+  const pixels = document.querySelectorAll('.pixel');
+
+  function checkColorSelected() {
+    const color = document.querySelector('.selected');
+    return color.id;
+  }
+
+  for (let i = 0; i < pixels.length; i += 1) {
+    pixels[i].addEventListener('click', function () {
+      const color = checkColorSelected();
+      pixels[i].style.backgroundColor = color;
+    });
+  }
 };
