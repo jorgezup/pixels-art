@@ -1,4 +1,8 @@
-// eslint-disable-next-line func-names
+/* eslint-disable sonarjs/cognitive-complexity */
+/* eslint-disable func-names */
+/* eslint-disable prefer-arrow-callback */
+/* eslint-disable max-lines-per-function */
+
 window.onload = function () {
   const pixelBoard = document.querySelector('#pixel-board');
   const lines = 5;
@@ -17,5 +21,27 @@ window.onload = function () {
     }
   }
 
-  createPixelBoard();
+  createPixelBoard(); // Calling function to create pixelBoard
+
+  function defaultColor(color) {
+    const colorDefault = document.querySelector(`#${color}`);
+    colorDefault.classList.toggle('selected');
+  }
+
+  defaultColor('black'); // Calling function to determine default color
+
+  const colorsPalette = document.querySelectorAll('.color');
+
+  function removeSelectedColor() {
+    for (let i = 0; i < colorsPalette.length; i += 1) {
+      colorsPalette[i].classList.remove('selected');
+    }
+  }
+
+  for (let i = 0; i < colorsPalette.length; i += 1) {
+    colorsPalette[i].addEventListener('click', function addClass() {
+      removeSelectedColor(); // Remove selected color from others divs
+      colorsPalette[i].classList.add('selected'); // Add selected color to div selected
+    });
+  }
 };

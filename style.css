@@ -10,19 +10,19 @@ body {
   display: inline-block;
 }
 
-.black {
+#black {
   background-color: #000000;
 }
 
-.red {
+#red {
   background-color: red;
 }
 
-.blue {
+#blue {
   background-color: blue;
 }
 
-.green {
+#green {
   background-color: green;
 }
 
