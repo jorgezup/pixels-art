@@ -1,0 +1,27 @@
+body {
+    width: 100%;
+    max-width: 1366px;
+    height: 1vh;
+    max-height: 768px;
+}
+
+.color {
+    border: 1px solid #000000;
+    display: inline-block;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
