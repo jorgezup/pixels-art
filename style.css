@@ -3,11 +3,15 @@ body {
   max-width: 1366px;
   height: 1vh;  
   max-height: 768px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .color {
   border: 1px solid #000000;
   display: inline-block;
+  width: 50px;
+  height: 50px;
 }
 
 #black {
@@ -26,9 +30,12 @@ body {
   background-color: green;
 }
 
-#pixel-board {
-  margin-top: 30px;
-  padding: 20px;
+#clear-board {
+  margin: 30px 0;
+  padding: 20px 40px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  font-size:18px;
 }
 
 .pixel {

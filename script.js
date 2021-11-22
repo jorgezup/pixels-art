@@ -58,4 +58,17 @@ window.onload = function () {
       pixels[i].style.backgroundColor = color;
     });
   }
+
+  function cleanPixels() {
+    for (let i = 0; i < pixels.length; i += 1) {
+      pixels[i].style.backgroundColor = '#FFFFFF';
+    }
+  }
+
+  const btnClear = document.querySelector('#clear-board');
+  btnClear.addEventListener('click', function () {
+    cleanPixels();
+    removeSelectedColor();
+    defaultColor('black');
+  });
 };
